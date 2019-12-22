@@ -1,4 +1,4 @@
-# DayZCommunityOfflineMode DeerIsle Edition 1.0
+# DayZCommunityOfflineMode DeerIsle Edition
 
 **Thank you to Arkensor for his Mod DayZCommunityOffline Mode**
 **For without his Mod this would not exsit**  
