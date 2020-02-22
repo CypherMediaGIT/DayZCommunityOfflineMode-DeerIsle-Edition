@@ -2,11 +2,11 @@ class CommunityOfflineClient extends MissionGameplay
 {
 	protected bool HIVE_ENABLED = true; //Local Hive / Economy / Infected spawn
 
-    protected bool m_bLoaded;
+    protected bool m_Loaded;
 
 	void CommunityOfflineClient()
 	{
-	    m_bLoaded = false;
+	    m_Loaded = false;
 
 		NewModuleManager();
 	}
@@ -59,9 +59,9 @@ class CommunityOfflineClient extends MissionGameplay
 
         GetModuleManager().OnUpdate( timeslice );
 
-        if( !m_bLoaded && !GetDayZGame().IsLoading() )
+        if( !m_Loaded && !GetDayZGame().IsLoading() )
         {
-            m_bLoaded = true;
+            m_Loaded = true;
             OnMissionLoaded();
         }
 	}
