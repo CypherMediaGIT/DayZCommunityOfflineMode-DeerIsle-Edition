@@ -1,4 +1,4 @@
-# DayZCommunityOfflineMode DeerIsle Edition 1.2 (MAP Version: 3.41)
+# DayZCommunityOfflineMode DeerIsle Edition 1.2                  (MAP Version: 3.41)
 
 **Thank you to Arkensor for his Mod DayZCommunityOffline Mode**
 **For without his Mod this would not exsit**  
