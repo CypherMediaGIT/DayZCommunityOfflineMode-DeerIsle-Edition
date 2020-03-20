@@ -1,4 +1,4 @@
-# DayZCommunityOfflineMode DeerIsle Edition
+# DayZCommunityOfflineMode DeerIsle Edition 1.2 (MAP Version: 3.41)
 
 **Thank you to Arkensor for his Mod DayZCommunityOffline Mode**
 **For without his Mod this would not exsit**  
@@ -64,6 +64,7 @@ You might delete your whole ```Missions``` folder and validate your game files v
 # Teleportation
 * This Version of DayZCommunityOfflineMode DeerIsle Edition has had the Teleport locations updated to match all the loction found on the DeerIsle ISurvive Map
 * https://dayz.ginfo.gg/deerIsle/
+* This Vesion updates the spawn locations to include Temple Location
  
 # Loot and infected spawn
 By default the "Hive" that is repsonsible for spawning loot and infected is **enabled**. If you want to prevent loot and infected from spawning you need to follow this guide: [Toggle loot and infected spawn](https://github.com/CypherMediaGIT/DayZCommunityOfflineMode-DeerIsle-Edition/wiki/Toggle-Loot-and-Infected-Spawn)  
