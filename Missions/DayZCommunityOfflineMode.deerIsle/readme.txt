@@ -1,0 +1,3 @@
+- Make a backup off your mission folder (DayZED may still be buggy) !!!
+- Copy DayZED files to your mission folder where your init.c is
+- Run

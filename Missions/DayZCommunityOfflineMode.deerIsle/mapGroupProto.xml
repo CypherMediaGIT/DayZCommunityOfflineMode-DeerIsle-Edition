@@ -10903,5 +10903,119 @@
 						<point pos="-0.830931 -0.500488 -0.467392" range="0.110352" height="0.275880" />
 						<point pos="-0.866100 -0.489319 0.377680" range="0.100000" height="0.250000" />
 				</container>
+		</group>		
+		<group name="Land_fortknoxbase" lootmax="20">
+				<usage name="Fortknox" />
+				<usage name="Military" />
+				<container name="lootFloor" lootmax="20">
+						<category name="tools" />
+						<category name="containers" />
+						<category name="clothes" />
+						<category name="weapons" />
+						<tag name="floor" />
+						<tag name="shelves" />
+						<point pos="-14.7953 -17.177 5.94203" range="0.387367" height="0.181305" flags="32"/>
+						<point pos="14.1111 -17.177 5.94203" range="0.156253" height="0.177795" flags="32"/>
+						<point pos="14.1111 17.9363 5.94203" range="0.134375" height="0.335938" flags="32"/>
+						<point pos="-14.9933 17.9363 5.94203" range="0.168750" height="0.421875" flags="32"/>
+						<point pos="-9.53496 -18.1118 -0.579878" range="0.100000" height="0.250000" flags="32"/>
+						<point pos="9.39871 -18.2148 -9.32866" range="0.196289" height="0.490723" flags="32"/>
+						<point pos="15.8642 -18.2148 -9.32866" range="0.229492" height="0.573731" flags="32"/>
+						<point pos="15.8642 -10.7822 -9.32866" range="0.409375" height="1.023438" flags="32"/>
+						<point pos="9.33984 -10.7822 -9.32866" range="0.203125" height="0.507690" flags="32"/>
+						<point pos="9.33984 -5.17229 -9.32866" range="0.110352" height="0.275880" flags="32"/>
+						<point pos="15.8614 -5.17229 -9.32866" range="0.100000" height="0.250000" flags="32"/>						
+						<point pos="15.8614 0.711332 -9.32866" range="0.387367" height="0.181305" flags="32"/>						
+						<point pos="9.32386 0.711332 -9.32866" range="0.156253" height="0.177795" flags="32"/>						
+						<point pos="9.39871 -18.2148 -5.52866" range="0.196289" height="0.490723" flags="32"/>
+						<point pos="15.8642 -18.2148 -5.52866" range="0.229492" height="0.573731" flags="32"/>
+						<point pos="15.8642 -10.7822 -5.52866" range="0.409375" height="1.023438" flags="32"/>
+						<point pos="9.33984 -10.7822 -5.52866" range="0.203125" height="0.507690" flags="32"/>
+						<point pos="9.33984 -5.17229 -5.52866" range="0.110352" height="0.275880" flags="32"/>
+						<point pos="15.8614 -5.17229 -5.52866" range="0.100000" height="0.250000" flags="32"/>						
+						<point pos="15.8614 0.711332 -5.52866" range="0.387367" height="0.181305" flags="32"/>						
+						<point pos="9.32386 0.711332 -5.52866" range="0.156253" height="0.177795"flags="32" />
+				</container>
+		</group>		
+		<group name="Land_jmc_xplane" lootmax="10">
+				<usage name="Military" />
+				<container name="lootFloor" lootmax="10">						
+						<category name="weapons" />
+						<tag name="floor" />
+						<tag name="shelves" />
+						<point pos="-1.927728 -1.697937 -0.790661" range="0.134375" height="1.549751" />
+						<point pos="-0.927728 -1.697937 0.790661" range="0.134375" height="1.549751" />
+						<point pos="1.927728  1.697937 -0.790661" range="0.134375" height="1.549751" />
+						<point pos="1.927728 -1.697937 0.790661" range="0.134375" height="1.549751" />
+						<point pos="-1.927728 1.697937 -0.790661" range="0.134375" height="1.549751" />
+				</container>
 		</group>
+		<group name="Land_zisb_di_small_cave_end_1" lootmax="2">
+			<usage name="Police" />
+			<usage name="Military" />				
+			<usage name="Mine" />
+			<container name="lootFloor" lootmax="2">						
+					<category name="weapons" />
+					<tag name="floor" />
+					<tag name="shelves" />					
+					<point pos="0.455 1.719 0.095" range="0.5" height="0.5" flags="32"/>
+					<point pos="-0.758 1.719 0.282"  range="0.5" height="0.5" flags="32"/>
+					<point pos="0.058 1.719 1.028"  range="0.5" height="0.5" flags="32"/>
+					<point pos="0.0 0.0 0.0"  range="0.5" height="0.5" flags="32"/>
+			</container>
+		</group>			
+		<group name="Land_jmc_cabin01" lootmax="5">
+				<usage name="Hunting" />
+				<usage name="Village" />
+				<usage name="Police" />
+				<usage name="Military" />				
+				<usage name="Mine" />
+				<container name="lootFloor" lootmax="5">
+						<category name="tools" />
+						<category name="containers" />
+						<category name="clothes" />
+						<category name="food" />
+						<category name="weapons" />
+						<tag name="floor" />
+						<point pos="-0.861 1.7 1.816"  range="0.5" height="1.0" flags="32"/>						
+						<point pos="2.332 1.7 1.906"   range="0.5" height="1.0" flags="32"/>						
+						<point pos="2.461 1.7 -2.114"  range="0.5" height="1.0" flags="32"/>						
+						<point pos="-0.812 1.7 -2.114" range="0.5" height="1.0" flags="32"/>						
+						<point pos="1.099 4.525 0.490"   range="0.5" height="1.0" flags="32"/>						
+						<point pos="-0.292 4.525 0.644"  range="0.5" height="1.0" flags="32"/>						
+						<point pos="-0.241 4.525 -0.696" range="0.5" height="1.0" flags="32"/>						
+						<point pos="1.331 4.525 -0.670"  range="0.5" height="1.0" flags="32"/>	
+				</container>
+				<container name="lootweapons" lootmax="5">
+						<category name="weapons" />
+						<category name="explosives" />
+						<point pos="-0.861 1.7 1.816"  range="0.5" height="1.0" flags="32"/>						
+						<point pos="2.332 1.7 1.906"   range="0.5" height="1.0" flags="32"/>						
+						<point pos="2.461 1.7 -2.114"  range="0.5" height="1.0" flags="32"/>						
+						<point pos="-0.812 1.7 -2.114" range="0.5" height="1.0" flags="32"/>						
+						<point pos="1.099 4.525 0.490"   range="0.5" height="1.0" flags="32"/>						
+						<point pos="-0.292 4.525 0.644"  range="0.5" height="1.0" flags="32"/>						
+						<point pos="-0.241 4.525 -0.696" range="0.5" height="1.0" flags="32"/>						
+						<point pos="1.331 4.525 -0.670"  range="0.5" height="1.0" flags="32"/>	
+				</container>
+		</group>		
+		<group name="Land_jmc_ruinecolumn_loot" lootmax="8">										
+				<usage name="Temple" />	
+				<container name="lootFloor" lootmax="8">
+						<category name="tools" />
+						<category name="containers" />
+						<category name="clothes" />		
+						<category name="food" />		
+						<category name="weapons" />										
+						<category name="explosives" />													
+						<point pos="0.314 1.701 0.373" range="0.9" height="1.181305" flags="32"/>
+						<point pos="-0.314 1.701 0.373" range="0.9" height="1.181305" flags="32"/>
+						<point pos="0.314 1.701 -0.373" range="0.9" height="1.181305" flags="32"/>
+						<point pos="-0.314 1.701 -0.373" range="0.9" height="1.181305" flags="32"/>												
+						<point pos="0.000 1.701 0.373" range="0.9" height="1.181305" flags="32"/>
+						<point pos="-0.314 1.701 0.000" range="0.9" height="1.181305" flags="32"/>
+						<point pos="0.000 1.701 -0.373" range="0.9" height="1.181305" flags="32"/>
+						<point pos="0.314 1.701 0.000" range="0.9" height="1.181305" flags="32"/>												
+				</container>				
+		</group>		
 </prototype>

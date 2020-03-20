@@ -53,6 +53,7 @@ class PositionMenu extends PopupMenu
 		Positions.Insert( "RCFI", "3762.50 0 8862.15" );
 		Positions.Insert( "Mine", "11259.50 0 2275.72" );
 		Positions.Insert( "Crotch Island", "10715.00 0 3111.54" );
+		Positions.Insert( "Temple", "367.089 48.2792 723.626" );
 	}
 
 	void ~PositionMenu()
