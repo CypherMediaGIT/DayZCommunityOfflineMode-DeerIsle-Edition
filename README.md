@@ -5,7 +5,9 @@
 
 The DayZ Community Offline Mode DeerIsle Edition offers the ability, to explore the world of DayZ in a singleplayer environment on the DeerIsle Map. While this mode does not represent the actual DayZ gameplay it offers other possibilites for developers, content creators and player who do want to experiment around but not loose all their progress from online.
 
-# This Version contains [DayZED](https://deerisle-wiki.jimdosite.com/dayzed/), DayZED is a free tool which JohnMcLane coded for himself while modding on the map - to make some things just easier and quicker. Its main purpose is to do massive database changes at once with just a few clicks. Aka "Loot Editor". 
+# This Version contains [DayZED](https://deerisle-wiki.jimdosite.com/dayzed/)
+
+DayZED is a free tool which JohnMcLane coded for himself while modding on the map - to make some things just easier and quicker. Its main purpose is to do massive database changes at once with just a few clicks. Aka "Loot Editor". 
 
 # DayZED Known issues
 
