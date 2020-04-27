@@ -18,8 +18,8 @@ Do not forget to add attribute act="car", if root class represents moveable vehi
 		<default name="dyn_radius" value="30" />
 		<default name="dyn_smin" value="0" />
 		<default name="dyn_smax" value="0" />
-		<default name="dyn_dmin" value="1" />
-		<default name="dyn_dmax" value="5" />
+		<default name="dyn_dmin" value="3" />
+		<default name="dyn_dmax" value="6" />
 		<default name="log_ce_loop" value="false"/>
 		<default name="log_ce_dynamicevent" value="false"/>
 		<default name="log_ce_vehicle" value="false"/>

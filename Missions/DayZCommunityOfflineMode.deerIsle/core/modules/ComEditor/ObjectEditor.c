@@ -40,7 +40,12 @@ class ObjectEditor extends Module
 	{
 	    auto obj = GetGame().CreateObject( type, position );
 	    obj.SetPosition( position );
+	    obj.SetOrientation( orientation );
 	    obj.SetOrientation( obj.GetOrientation() );
+	    obj.Update();
+	    obj.SetAffectPathgraph( true, false );
+        GetGame().GetCallQueue( CALL_CATEGORY_SYSTEM ).CallLater( GetGame().UpdatePathgraphRegionByObject, 100, false, obj );
+
 	    m_Objects.Insert( obj );
 	}
 
@@ -115,7 +120,11 @@ class ObjectEditor extends Module
         toCopy += "{\n";
         toCopy += "    auto obj = GetGame().CreateObject( type, position );\n";
         toCopy += "    obj.SetPosition( position );\n";
+        toCopy += "    obj.SetOrientation( orientation );\n";
         toCopy += "    obj.SetOrientation( obj.GetOrientation() ); //Collision fix\n";
+        toCopy += "    obj.Update();\n";
+        toCopy += "    obj.SetAffectPathgraph( true, false );\n";
+        toCopy += "    if( obj.CanAffectPathgraph() ) GetGame().GetCallQueue( CALL_CATEGORY_SYSTEM ).CallLater( GetGame().UpdatePathgraphRegionByObject, 100, false, obj );\n";
         toCopy += "}\n";
         toCopy += "\n";
         toCopy += "//Your custom spawned objects\n";
@@ -187,7 +196,7 @@ class ObjectEditor extends Module
 		m_Objects.Clear();
 		*/
 
-
+        /*
 		ref SceneSaveST scene = new SceneSaveST();
 		scene.name = "latest";
 
@@ -195,13 +204,36 @@ class ObjectEditor extends Module
 		{
 			ref Param objectParam = new Param3<string, vector, vector>( m_object.GetType(), m_object.GetPosition(), m_object.GetOrientation() );
 			scene.m_SceneObjects.Insert( objectParam );
-
 		}
+		*/
 
-		Message( "Saved objects to latest.json" );
+		auto exportFile = OpenFile( "$saves:COMObjectEditorDeerIsleSave.json", FileMode.WRITE );
+
+        if( !exportFile )
+        {
+            Message( "Error writing COMObjectEditorDeerIsleSave.json. Current changes could not NOT be saved!!!" );
+            return;
+        }
+
+        FPrint( exportFile, "{\"name\":\"latest\",\"m_SceneObjects\":[" );
+
+        auto serial = new JsonSerializer;
+        string file_content;
+        foreach(int nObject, Object object : m_Objects )
+        {
+            auto objectParam = new Param3<string, vector, vector>( object.GetType(), object.GetPosition(), object.GetOrientation() );
+            serial.WriteToString( objectParam, false, file_content );
+            FPrint( exportFile, file_content );
+            if( nObject < m_Objects.Count() - 1 ) FPrint( exportFile, "," );
+        }
+
+        FPrint( exportFile, "]}" );
+
+        CloseFile( exportFile )
+
+		Message( "Saved objects to COMObjectEditorDeerIsleSave.json (User/Documents/DayZ)." );
 //		JsonFileLoader< SceneSaveST >.JsonSaveFile( BASE_SCENE_DIR + "\\" + "latest.json", scene );
-		JsonFileLoader< SceneSaveST >.JsonSaveFile( "$saves:COMObjectEditorSave.json", scene );
-
+//		JsonFileLoader< SceneSaveST >.JsonSaveFile( "$saves:COMObjectEditorDeerIsleSave.json", scene );
 	}
 
 	void LoadScene()
@@ -209,12 +241,13 @@ class ObjectEditor extends Module
 		ref SceneSaveST scene = new SceneSaveST();
 
 //		JsonFileLoader<SceneSaveST>.JsonLoadFile( BASE_SCENE_DIR + "\\" + "latest.json", scene );
-		JsonFileLoader<SceneSaveST>.JsonLoadFile( "$saves:COMObjectEditorSave.json", scene );
+		JsonFileLoader<SceneSaveST>.JsonLoadFile( "$saves:COMObjectEditorDeerIsleSave.json", scene );
 
 		foreach( auto param : scene.m_SceneObjects )
 		{
 			Object object = GetGame().CreateObject( param.param1, param.param2, false, false );
 			object.SetOrientation( param.param3 );
+			ForceTargetCollisionUpdate( object );
 
 			m_Objects.Insert( object );
 		}

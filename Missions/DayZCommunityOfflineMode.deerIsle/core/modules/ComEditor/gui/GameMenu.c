@@ -26,7 +26,7 @@ class GameMenu extends PopupMenu
 		m_gameScriptList.AddItem( "Spawn Sedan", 	 new Param1< string >( "SpawnSedan" ), 	   0 );
         m_gameScriptList.AddItem( "Spawn Gunter 2",  new Param1< string >( "SpawnGunter" ),    0 );
         m_gameScriptList.AddItem( "Spawn Sarka",     new Param1< string >( "SpawnSarka" ),     0 );
-//      m_gameScriptList.AddItem( "Spawn V3S",		 new Param1< string >( "SpawnV3S" ), 	   0 );		
+//      m_gameScriptList.AddItem( "Spawn V3S",		 new Param1< string >( "SpawnV3S" ), 	   0 );
 //		m_gameScriptList.AddItem( "Spawn V3S_Cargo", new Param1< string >( "SpawnV3SCargo" ),  0 );
 //		m_gameScriptList.AddItem( "Spawn Bus", 		 new Param1< string >( "SpawnBus" ), 	   0 );
 //		m_gameScriptList.AddItem( "Spawn Van",	     new Param1< string >( "SpawnVan" ), 	   0 );
@@ -146,9 +146,10 @@ class GameMenu extends PopupMenu
 	void SpawnHatchback() 
 	{
 		TStringArray attArr = {
-		"HatchbackWheel","HatchbackWheel","HatchbackWheel","HatchbackWheel",
-		"CarBattery","CarRadiator","EngineBelt","SparkPlug","HatchbackHood",
-		"HatchbackTrunk","HatchbackDoors_Driver","HatchbackDoors_CoDriver",
+		"HeadlightH7", "HeadlightH7",
+		"HatchbackWheel", "HatchbackWheel", "HatchbackWheel", "HatchbackWheel",
+		"CarBattery", "CarRadiator", "EngineBelt", "SparkPlug", "HatchbackHood",
+		"HatchbackTrunk", "HatchbackDoors_Driver", "HatchbackDoors_CoDriver",
 		};
 
 		SpawnVehicle( "OffroadHatchback", attArr );
@@ -157,14 +158,17 @@ class GameMenu extends PopupMenu
 	void SpawnSedan() 
 	{
 		TStringArray attArr = {
-		"CivSedanWheel","CivSedanWheel","CivSedanWheel","CivSedanWheel",
+		"HeadlightH7", "HeadlightH7",
+		"CivSedanWheel", "CivSedanWheel", "CivSedanWheel", "CivSedanWheel",
 		"CarBattery", "CarRadiator","EngineBelt", "SparkPlug","CivSedanHood",
 		"CivSedanTrunk", "CivSedanDoors_Driver","CivSedanDoors_CoDriver",
 		"CivSedanDoors_BackLeft", "CivSedanDoors_BackRight",
 		};
 
 		SpawnVehicle( "CivilianSedan", attArr );
-	} 	void SpawnGunter()
+	}
+
+	void SpawnGunter()
 	{
 		TStringArray attArr = {
 		"HeadlightH7", "HeadlightH7", "CarBattery", "CarRadiator", "SparkPlug", "Hatchback_02_Door_1_1",
@@ -188,7 +192,7 @@ class GameMenu extends PopupMenu
 		SpawnVehicle( "Sedan_02", attArr );
 	}
 
-		void SpawnV3SCargo() 
+	void SpawnV3SCargo() 
 	{
 		TStringArray attArr = {
 		"V3SWheel","V3SWheel", "V3SWheel","V3SWheel", "V3SWheelDouble","V3SWheelDouble", "V3SWheelDouble","V3SWheelDouble",
