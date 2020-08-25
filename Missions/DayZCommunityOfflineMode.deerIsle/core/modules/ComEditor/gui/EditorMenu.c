@@ -26,7 +26,7 @@ class EditorMenu extends UIScriptedMenu
 	
 	override Widget Init()
     {
-        layoutRoot = GetGame().GetWorkspace().CreateWidgets( "$CurrentDir:missions\\DayZCommunityOfflineMode.deerIsle\\core\\modules\\ComEditor\\gui\\layouts\\EditorMenu.layout" );
+        layoutRoot = GetGame().GetWorkspace().CreateWidgets( "$CurrentDir:missions\\DayZCommunityOfflineMode.deerisle\\core\\modules\\ComEditor\\gui\\layouts\\EditorMenu.layout" );
 
 		m_ObjectButton   = ButtonWidget.Cast( layoutRoot.FindAnyWidget("objects_button") );
 		m_PositionButton = ButtonWidget.Cast( layoutRoot.FindAnyWidget("position_button") );
@@ -37,12 +37,12 @@ class EditorMenu extends UIScriptedMenu
 
 
 		// object menu
-		m_objectMenu   = GetGame().GetWorkspace().CreateWidgets( "$CurrentDir:missions\\DayZCommunityOfflineMode.deerIsle\\core\\modules\\ComEditor\\gui\\layouts\\ObjectMenu.layout", layoutRoot );
-		m_weatherMenu  = GetGame().GetWorkspace().CreateWidgets( "$CurrentDir:missions\\DayZCommunityOfflineMode.deerIsle\\core\\modules\\ComEditor\\gui\\layouts\\WeatherMenu.layout", layoutRoot );
-		m_positionMenu = GetGame().GetWorkspace().CreateWidgets( "$CurrentDir:missions\\DayZCommunityOfflineMode.deerIsle\\core\\modules\\Admintool\\gui\\layouts\\PositionMenu.layout", layoutRoot );
-		m_gameMenu 	   = GetGame().GetWorkspace().CreateWidgets( "$CurrentDir:missions\\DayZCommunityOfflineMode.deerIsle\\core\\modules\\ComEditor\\gui\\layouts\\GameMenu.layout", layoutRoot );
-		m_objectInfoMenu = GetGame().GetWorkspace().CreateWidgets( "$CurrentDir:missions\\DayZCommunityOfflineMode.deerIsle\\core\\modules\\ComEditor\\gui\\layouts\\ObjectEditorInfo.layout", layoutRoot );
-		m_cameraMenu = GetGame().GetWorkspace().CreateWidgets( "$CurrentDir:missions\\DayZCommunityOfflineMode.deerIsle\\core\\modules\\CameraTool\\gui\\layouts\\CameraSettings.layout", layoutRoot );
+		m_objectMenu   = GetGame().GetWorkspace().CreateWidgets( "$CurrentDir:missions\\DayZCommunityOfflineMode.deerisle\\core\\modules\\ComEditor\\gui\\layouts\\ObjectMenu.layout", layoutRoot );
+		m_weatherMenu  = GetGame().GetWorkspace().CreateWidgets( "$CurrentDir:missions\\DayZCommunityOfflineMode.deerisle\\core\\modules\\ComEditor\\gui\\layouts\\WeatherMenu.layout", layoutRoot );
+		m_positionMenu = GetGame().GetWorkspace().CreateWidgets( "$CurrentDir:missions\\DayZCommunityOfflineMode.deerisle\\core\\modules\\Admintool\\gui\\layouts\\PositionMenu.layout", layoutRoot );
+		m_gameMenu 	   = GetGame().GetWorkspace().CreateWidgets( "$CurrentDir:missions\\DayZCommunityOfflineMode.deerisle\\core\\modules\\ComEditor\\gui\\layouts\\GameMenu.layout", layoutRoot );
+		m_objectInfoMenu = GetGame().GetWorkspace().CreateWidgets( "$CurrentDir:missions\\DayZCommunityOfflineMode.deerisle\\core\\modules\\ComEditor\\gui\\layouts\\ObjectEditorInfo.layout", layoutRoot );
+		m_cameraMenu = GetGame().GetWorkspace().CreateWidgets( "$CurrentDir:missions\\DayZCommunityOfflineMode.deerisle\\core\\modules\\CameraTool\\gui\\layouts\\CameraSettings.layout", layoutRoot );
 
         return layoutRoot;
 	}
@@ -69,13 +69,13 @@ class EditorMenu extends UIScriptedMenu
     {
         super.OnHide();
 
-        ObjectEditor.Cast( GetModuleManager().GetModule( ObjectEditor )).EditorState( false );
+        ObjectEditor.Cast( COM_GetModuleManager().GetModule( ObjectEditor )).EditorState( false );
 
         GetGame().GetInput().ResetGameFocus();
 
-        if ( !CameraTool.Cast(GetModuleManager().GetModule(CameraTool)).IsUsingCamera() ) 
+        if ( !CameraTool.Cast(COM_GetModuleManager().GetModule(CameraTool)).IsUsingCamera() ) 
         {
-			GetPlayer().GetInputController().OverrideMovementSpeed( false, 0 );
+			COM_GetPB().GetInputController().OverrideMovementSpeed( false, 0 );
         }
         
 
@@ -100,11 +100,11 @@ class EditorMenu extends UIScriptedMenu
 	        		ai = true;
 	        	}
 
-	    		Object obj = GetGame().CreateObject( strSelection, GetPointerPos(), true, ai );
+	    		Object obj = GetGame().CreateObject( strSelection, COM_GetPointerPos(), true, ai );
 	    		obj.PlaceOnSurface(); // reeeeeeeeeeeee
-	    		ForceTargetCollisionUpdate( obj );
-	    		ObjectEditor.Cast(GetModuleManager().GetModule( ObjectEditor )).SelectObject( obj );
-	    		ObjectEditor.Cast(GetModuleManager().GetModule( ObjectEditor )).addObject( obj );
+	    		COM_ForceTargetCollisionUpdate( obj );
+	    		ObjectEditor.Cast(COM_GetModuleManager().GetModule( ObjectEditor )).SelectObject( obj );
+	    		ObjectEditor.Cast(COM_GetModuleManager().GetModule( ObjectEditor )).addObject( obj );
 
 	    		ObjectInfoMenu.listBox.AddItem(obj.GetType(), obj, 0);
 	    	}
@@ -139,7 +139,7 @@ class EditorMenu extends UIScriptedMenu
 		{
 			m_objectInfoMenu.GetScript( popMenu );
 
-			ObjectEditor.Cast( GetModuleManager().GetModule( ObjectEditor )).ToggleEditor();
+			ObjectEditor.Cast( COM_GetModuleManager().GetModule( ObjectEditor )).ToggleEditor();
 		}
 
 		if ( w == m_CameraButton ) 
@@ -237,7 +237,7 @@ class EditorMenu extends UIScriptedMenu
 		if ( m_objectMenu != focus && m_objectInfoMenu != focus && m_objectInfoMenu.IsVisible() ) 
 		{
 			m_objectInfoMenu.Show(false);
-			ObjectEditor.Cast( GetModuleManager().GetModule( ObjectEditor )).ToggleEditor();
+			ObjectEditor.Cast( COM_GetModuleManager().GetModule( ObjectEditor )).ToggleEditor();
 		}
 	}
 

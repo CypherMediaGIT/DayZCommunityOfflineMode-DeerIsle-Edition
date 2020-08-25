@@ -1,17 +1,17 @@
 #define COM_MODULES_OLDLOADING
 
-#include "$CurrentDir:missions\\DayZCommunityOfflineMode.deerIsle\\core\\Module.c"
-#include "$CurrentDir:missions\\DayZCommunityOfflineMode.deerIsle\\core\\KeyMouseBinding.c"
+#include "$CurrentDir:missions\\DayZCommunityOfflineMode.deerisle\\core\\Module.c"
+#include "$CurrentDir:missions\\DayZCommunityOfflineMode.deerisle\\core\\KeyMouseBinding.c"
 
 #ifdef COM_MODULES_OLDLOADING
-#include "$CurrentDir:missions\\DayZCommunityOfflineMode.deerIsle\\core\\modules\\Admintool\\module.c"
-#include "$CurrentDir:missions\\DayZCommunityOfflineMode.deerIsle\\core\\modules\\CameraTool\\module.c"
-#include "$CurrentDir:missions\\DayZCommunityOfflineMode.deerIsle\\core\\modules\\ComEditor\\module.c"
-#include "$CurrentDir:missions\\DayZCommunityOfflineMode.deerIsle\\core\\modules\\ComKeyBinds\\module.c"
-#include "$CurrentDir:missions\\DayZCommunityOfflineMode.deerIsle\\core\\modules\\ComMenu\\module.c"
-//#include "$CurrentDir:missions\\DayZCommunityOfflineMode.deerIsle\\core\\modules\\Persistency\\module.c"
-#include "$CurrentDir:missions\\DayZCommunityOfflineMode.deerIsle\\core\\modules\\DebugMonitor\\module.c"
-#include "$CurrentDir:missions\\DayZCommunityOfflineMode.deerIsle\\core\\modules\\BarrelCrosshair\\module.c"
+#include "$CurrentDir:missions\\DayZCommunityOfflineMode.deerisle\\core\\modules\\Admintool\\module.c"
+#include "$CurrentDir:missions\\DayZCommunityOfflineMode.deerisle\\core\\modules\\CameraTool\\module.c"
+#include "$CurrentDir:missions\\DayZCommunityOfflineMode.deerisle\\core\\modules\\ComEditor\\module.c"
+#include "$CurrentDir:missions\\DayZCommunityOfflineMode.deerisle\\core\\modules\\ComKeyBinds\\module.c"
+#include "$CurrentDir:missions\\DayZCommunityOfflineMode.deerisle\\core\\modules\\ComMenu\\module.c"
+//#include "$CurrentDir:missions\\DayZCommunityOfflineMode.deerisle\\core\\modules\\Persistency\\module.c"
+#include "$CurrentDir:missions\\DayZCommunityOfflineMode.deerisle\\core\\modules\\DebugMonitor\\module.c"
+#include "$CurrentDir:missions\\DayZCommunityOfflineMode.deerisle\\core\\modules\\BarrelCrosshair\\module.c"
 #endif
 
 class KeyMouseActionType
@@ -148,7 +148,7 @@ class ModuleManager
 
                     UAInput input = GetUApi().GetInputByName( k_m_Binding.GetUAInputName() );
 
-                    //Message( k_m_Binding.GetUAInputName() + " -> " + input.LocalPress() );
+                    //COM_Message( k_m_Binding.GetUAInputName() + " -> " + input.LocalPress() );
 
                     //input.ForceEnable( true );
 
@@ -218,7 +218,7 @@ class ModuleManager
 
 ref ModuleManager g_com_ModuleManager;
 
-ref ModuleManager GetModuleManager()
+ref ModuleManager COM_GetModuleManager()
 {
     if( !g_com_ModuleManager )
     {

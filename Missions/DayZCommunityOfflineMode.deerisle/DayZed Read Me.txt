@@ -1,0 +1,12 @@
+- Make a backup off your mission folder (DayZED may still be buggy) !!!
+- Copy DayZED files to your mission folder where your init.c is
+- Run
+
+This Version of DeeIsle Offline Mode contains DayZED
+DayZED is a free tool which JohnMcLane coded for himself while modding on the map - to make some things just easier and quicker. Its main purpose is to do massive database changes at once with just a few clicks. Aka "Loot Editor".
+This version has bugs and will not be updated, you have to be a patreon of Benni's to get the updated DayZed Tool.
+
+DayZED Known issues
+Please keep in mind, its a very early and maybe buggy version. Some core features like deleting player- or eventspawns are still missing and will come in future updates. You can also use DayZED for editing Chernarus.
+
+This is UNOFFICIAL, so don't blame the DayZ development team if this is not working at all for you!

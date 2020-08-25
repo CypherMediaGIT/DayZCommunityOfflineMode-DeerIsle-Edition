@@ -1,5 +1,8 @@
-# DayZCommunityOfflineMode DeerIsle Edition 1.4
-# (MAP Version: 4.0)
+# DayZCommunityOfflineMode DeerIsle Edition 1.5
+# (MAP Version: 4.1)
+# !!!UPDATE!!
+# This version is the Mission Files for DeerIsle 4.1
+# the Workshop Mod DeerIsle version 4.1 is schedualed for release on 30th August 2020
 
 **Thank you to Arkensor for his Mod DayZCommunityOffline Mode**
 **For without his Mod this would not exsit**  

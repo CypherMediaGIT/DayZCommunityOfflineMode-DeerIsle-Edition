@@ -67,7 +67,7 @@ class COMCharacterSave extends UIScriptedMenu
 	Widget InitWithParent( Widget parent )
 	{
 		Print( "COMCharacterSave::InitWithParent" );
-		string layoutFile = "$CurrentDir:missions\\DayZCommunityOfflineMode.deerIsle\\core\\modules\\Persistency\\gui\\layouts\\COMCharacterSave.layout";
+		string layoutFile = "$CurrentDir:missions\\DayZCommunityOfflineMode.deerisle\\core\\modules\\Persistency\\gui\\layouts\\COMCharacterSave.layout";
 		if ( parent )
 		{
 			layoutRoot = GetGame().GetWorkspace().CreateWidgets( layoutFile, parent );
@@ -115,7 +115,7 @@ class COMCharacterSave extends UIScriptedMenu
 		if ( canSave )
 		{
 			m_oPersistencyModule.SavePlayer(saveName);
-			GetMission().Continue();
+			COM_GetMission().Continue();
 		}
 	}
 
@@ -126,7 +126,7 @@ class COMCharacterSave extends UIScriptedMenu
 		if ( code == 10 && result == DBB_YES )
 		{
 			m_oPersistencyModule.SavePlayer(m_SaveText.GetText());
-			GetMission().Continue();
+			COM_GetMission().Continue();
 			return true;
 		}
 

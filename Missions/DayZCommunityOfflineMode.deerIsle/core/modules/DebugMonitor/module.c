@@ -1,5 +1,5 @@
 #ifndef COM_MODULES_OLDLOADING
-#include "$CurrentDir:missions\\DayZCommunityOfflineMode.deerIsle\\core\\BaseModuleInclude.c"
+#include "$CurrentDir:missions\\DayZCommunityOfflineMode.deerisle\\core\\BaseModuleInclude.c"
 #endif
 /*
     Define used for optional compilations
@@ -10,13 +10,13 @@
     Include of all .c files that belong to this module
 */
 #ifdef COM_MODULES_OLDLOADING
-#include "$CurrentDir:missions\\DayZCommunityOfflineMode.deerIsle\\core\\modules\\DebugMonitor\\CustomDebugMonitor.c"
-#include "$CurrentDir:missions\\DayZCommunityOfflineMode.deerIsle\\core\\modules\\DebugMonitor\\gui\\DebugMonitor.c"
+#include "$CurrentDir:missions\\DayZCommunityOfflineMode.deerisle\\core\\modules\\DebugMonitor\\CustomDebugMonitor.c"
+#include "$CurrentDir:missions\\DayZCommunityOfflineMode.deerisle\\core\\modules\\DebugMonitor\\gui\\DebugMonitor.c"
 #endif
 
 #ifndef COM_MODULES_OLDLOADING
 void RegisterModule()
 {
-    GetModuleManager().RegisterModule( new CustomDebugMonitor );
+    COM_GetModuleManager().RegisterModule( new CustomDebugMonitor );
 }
 #endif
