@@ -91,6 +91,7 @@ You find your logfiles here: ```Press WINDOWS + R  -> Type in %localappdata%/Day
 * [Jacob_Mango](https://github.com/Jacob-Mango)
 
 # Contributors:
+* [Chubby The Gamer](https://github.com/ChubbyTheGamer) - Custom Objects sinking fix on reboots
 * [gallexme](https://github.com/gallexme) - Suggestion for the mission based version
 * [DuhOneZ](https://twitter.com/DuhOneZ) - Code snippets
 * [Watchman](https://twitter.com/watchman113) - Documentation
