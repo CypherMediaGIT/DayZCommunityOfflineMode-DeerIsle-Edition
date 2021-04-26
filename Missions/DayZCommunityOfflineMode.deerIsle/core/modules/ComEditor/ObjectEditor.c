@@ -208,11 +208,11 @@ class ObjectEditor extends Module
 		}
 		*/
 
-		auto exportFile = OpenFile( "$saves:COMObjectEditorDeerIsleSave.json", FileMode.WRITE );
+		auto exportFile = OpenFile( "$saves:COMObjectEditorSaveDeerIsle.json", FileMode.WRITE );
 
         if( !exportFile )
         {
-            COM_Message( "Error writing COMObjectEditorDeerIsleSave.json. Current changes could not NOT be saved!!!" );
+            COM_Message( "Error writing COMObjectEditorSaveDeerIsle.json. Current changes could not NOT be saved!!!" );
             return;
         }
 
@@ -232,9 +232,9 @@ class ObjectEditor extends Module
 
         CloseFile( exportFile )
 
-		COM_Message( "Saved objects to COMObjectEditorDeerIsleSave.json (User/Documents/DayZ)." );
+		COM_Message( "Saved objects to COMObjectEditorSaveDeerIsle.json (User/Documents/DayZ)." );
 //		JsonFileLoader< SceneSaveST >.JsonSaveFile( BASE_SCENE_DIR + "\\" + "latest.json", scene );
-//		JsonFileLoader< SceneSaveST >.JsonSaveFile( "$saves:COMObjectEditorDeerIsleSave.json", scene );
+//		JsonFileLoader< SceneSaveST >.JsonSaveFile( "$saves:COMObjectEditorSaveDeerIsle.json", scene );
 	}
 
 	void LoadScene()
@@ -242,11 +242,11 @@ class ObjectEditor extends Module
 		ref SceneSaveST scene = new SceneSaveST();
 
 //		JsonFileLoader<SceneSaveST>.JsonLoadFile( BASE_SCENE_DIR + "\\" + "latest.json", scene );
-		JsonFileLoader<SceneSaveST>.JsonLoadFile( "$saves:COMObjectEditorDeerIsleSave.json", scene );
+		JsonFileLoader<SceneSaveST>.JsonLoadFile( "$saves:COMObjectEditorSaveDeerIsle.json", scene );
 
 		foreach( auto param : scene.m_SceneObjects )
 		{
-			Object object = GetGame().CreateObject( param.param1, param.param2, false, false );
+			Object object = GetGame().CreateObjectEx( param.param1, param.param2, ECE_CREATEPHYSICS | ECE_NOSURFACEALIGN ); //Fix For Object Drops //Chubby
 			object.SetOrientation( param.param3 );
 			COM_ForceTargetCollisionUpdate( object );
 

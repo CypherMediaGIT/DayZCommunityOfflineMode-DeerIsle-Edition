@@ -1,6 +1,7 @@
-# DayZCommunityOfflineMode DeerIsle Edition 1.6
-# (MAP Version: 4.2b)
-# This version is the Mission Files for DeerIsle 4.2b
+# DayZCommunityOfflineMode DeerIsle Edition 1.7
+# (MAP Version: 4.4)
+# This version is the Mission Files for DeerIsle 4.4 
+# DayZ Version 1.12
 
 
 **Thank you to Arkensor for his Mod DayZCommunityOffline Mode**

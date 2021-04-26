@@ -6,6 +6,7 @@
 		<category name="clothes"/>
 		<category name="vehiclesparts"/>
 		<category name="food"/>
+		<category name="industrialfood"/>
 		<category name="weapons"/>
 		<category name="books"/>
 		<category name="explosives"/>
@@ -29,9 +30,15 @@
 		<usage name="Office"/>
 		<usage name="School"/>
 		<usage name="Prison"/>
+		<usage name="Lunapark"/>
+		<usage name="SeasonalEvent"/>		
 		<usage name="Fortknox"/>
 		<usage name="Temple"/>
-		<usage name="Mine" />		
+		<usage name="Mine" />	
+		<usage name="Area42" />	
+		<usage name="KMUC" />	
+		<usage name="MilitaryCrates" />	
+		<usage name="Skelettons" />		
 	</usageflags>
 	<valueflags>
 		<value name="Tier1"/>
@@ -48,5 +55,6 @@
 		<value name="Tier12"/>		
 		<value name="Tier13"/>		
 		<value name="Tier14"/>		
+		<value name="Tier15"/>	
 	</valueflags>
 </lists>
