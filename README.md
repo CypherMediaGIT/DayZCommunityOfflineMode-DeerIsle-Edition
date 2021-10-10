@@ -1,6 +1,6 @@
-# DayZCommunityOfflineMode DeerIsle Edition 1.7
+# DayZCommunityOfflineMode DeerIsle Edition 1.8
 # (MAP Version: 4.5)
-# This version is the Mission Files for DeerIsle 4.4 
+# This version is the Mission Files for DeerIsle 4.5 
 # DayZ Version 1.14
 
 
