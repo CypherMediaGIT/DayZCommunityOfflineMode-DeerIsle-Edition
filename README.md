@@ -1,7 +1,7 @@
 # DayZCommunityOfflineMode DeerIsle Edition 1.7
-# (MAP Version: 4.4)
+# (MAP Version: 4.5)
 # This version is the Mission Files for DeerIsle 4.4 
-# DayZ Version 1.12
+# DayZ Version 1.14
 
 
 **Thank you to Arkensor for his Mod DayZCommunityOffline Mode**
@@ -12,7 +12,7 @@ The DayZ Community Offline Mode DeerIsle Edition offers the ability, to explore 
 # Important Warning
 
 You Must Have ```DeerIsle ``` Downloaded and Installed from the steam workshop to play this Mod .. The contents of deerIsle Mod folder that you need to play DeerIsle is not included with this download.
-To Download DeerIsle please visit the steam store https://steamcommunity.com/sharedfiles/filedetails/?id=1602372402
+To Download DeerIsle please visit the steam store [Here](https://steamcommunity.com/sharedfiles/filedetails/?id=1602372402)
 
 # Info for server owners & mappers
 There is now a wiki page available on how to use the community offline mode to spawn map objects on your server or mission you are working on: [Add custom objects to your server or mission](https://github.com/Arkensor/DayZCommunityOfflineMode/wiki/Add-custom-objects-to-your-server-or-mission)
@@ -22,10 +22,10 @@ After you placed down all objects you want to add, press ```SAVE``` in the Objec
 To export the objects simply press the ```EXPORT``` button. Now all placed objects will be exported and the code you need will be copied to your clipboard, which you can now paste into your .c File.
 
 # Installation:
-To Download ```DeerIsle``` please visit the steam store https://steamcommunity.com/sharedfiles/filedetails/?id=1602372402 and click on Subscribe and wait for steam to download the Workshop content, Once installed Run DayZ via Steam by clicking play on the DayZ page from within your game libary, when the Steam DayZ Launcher screen shows, Click on Mods on the menu to the left, Find ```DeerIsle``` in your mods List and click the drop down box arrow to the right of the DeerIsle line, Click the 3 dotted line to ```"Display More Options"``` and select "Open Folder in Windows Explorer", Click "I understand" in the next window, now copy ```@DeerIsle``` folder, press up one level in your current folder and paste the ```@DeerIsle``` into the DayZ folder that you should now be in ```C:\Program Files (x86)\Steam\steamapps\common\DayZ```
+To Download ```DeerIsle``` please visit the steam store [Here](https://steamcommunity.com/sharedfiles/filedetails/?id=1602372402) and click on Subscribe and wait for steam to download the Workshop content, Once installed Run DayZ via Steam by clicking play on the DayZ page from within your game libary, when the Steam DayZ Launcher screen shows, Click on Mods on the menu to the left, Find ```DeerIsle``` in your mods List and click the drop down box arrow to the right of the DeerIsle line, Click the 3 dotted line to ```"Display More Options"``` and select "Open Folder in Windows Explorer", Click "I understand" in the next window, now copy ```@DeerIsle``` folder, press up one level in your current folder and paste the ```@DeerIsle``` into the DayZ folder that you should now be in ```C:\Program Files (x86)\Steam\steamapps\common\DayZ```
 
 
-Download [this](https://github.com/CypherMediaGIT/DayZCommunityOfflineMode-DeerIsle-Edition/releases/download/1.7/DayZCommunityOfflineModeDeerIsleEdition.zip) zip archive.  
+Download [This](https://github.com/CypherMediaGIT/DayZCommunityOfflineMode-DeerIsle-Edition/releases/download/1.8/DayZCommunityOfflineMode.deerisle.zip) zip archive.  
 Make sure you are on the latest `STABLE` or `EXPERIMENTAL` version of the game.
 
 Unpack and Place the ```DayZCommunityOfflineMode.deerIsle``` folder inside your ```Missions``` folder in the DayZ game directory (```For example: C:\Program Files (x86)\Steam\steamapps\common\DayZ```).  
